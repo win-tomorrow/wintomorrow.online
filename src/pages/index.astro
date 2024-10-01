@@ -1,5 +1,5 @@
 ---
-
+import '../styles/global.css';
 ---
 
 <html lang="en">
@@ -8,13 +8,24 @@
 		<link rel="icon" type="image/svg+xml" href="/favicon.svg" />
 		<meta name="viewport" content="width=device-width" />
 		<meta name="generator" content={Astro.generator} />
+		<style>
+		.title {
+			font-family: 'Garamond';
+		}
+		.tagline {
+			display: block;
+			font-style: italic;
+		}
+		</style>
 		<title>Win Tomorrow</title>
 	</head>
 	<body>
-		<h1>Win Tomorrow</h1>
-		<p>
-			See the pulse of your Community
+		<h1 class="title">Win Tomorrow</h1>
+		<span class="tagline">
+			See the pulse of your Community.
+		</span>
+		<span class="tagline">
 			Speak to the Heart of your Community.
-		</p>
+		</span>
 	</body>
 </html>
